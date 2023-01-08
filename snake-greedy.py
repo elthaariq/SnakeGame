@@ -6,8 +6,8 @@ import pygame, sys, time, random
 import numpy as np
 
 # Window size
-frame_size_x = 720
-frame_size_y = 480
+frame_size_x = 1280
+frame_size_y = 720
 
 # Checks for errors encountered
 check_errors = pygame.init()
@@ -30,6 +30,7 @@ black = pygame.Color(0, 0, 0)
 white = pygame.Color(255, 255, 255)
 red = pygame.Color(255, 0, 0)
 green = pygame.Color(0, 255, 0)
+darkgreen = pygame.Color(29, 62, 4)
 blue = pygame.Color(0, 0, 255)
 
 # Show game over message
@@ -184,7 +185,7 @@ def main():
         food_spawn = True
 
         # GFX
-        game_window.fill(black)
+        game_window.fill(darkgreen)
         for pos in snake_body:
             # Snake body
             # .draw.rect(play_surface, color, xy-coordinate)
