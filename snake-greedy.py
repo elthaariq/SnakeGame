@@ -21,7 +21,7 @@ else:
 
 
 # Initialise game window
-pygame.display.set_caption('Greedy Best Snake by El Thaariq')
+pygame.display.set_caption('Greedy Best Snake by CS8')
 game_window = pygame.display.set_mode((frame_size_x, frame_size_y))
 
 
@@ -194,7 +194,7 @@ def main():
             pygame.draw.rect(game_window, green, pygame.Rect(pos[0], pos[1], 10, 10))
 
         # Snake food
-        pygame.draw.rect(game_window, white, pygame.Rect(food_pos[0], food_pos[1], 10, 10))
+        pygame.draw.rect(game_window, red, pygame.Rect(food_pos[0], food_pos[1], 10, 10))
 
         # Touching the snake body
         if snake_pos in snake_body[1:]:
